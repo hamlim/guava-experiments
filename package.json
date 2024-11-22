@@ -2,14 +2,21 @@
   "name": "guava",
   "module": "index.ts",
   "type": "module",
+  "workspaces": ["demo-app"],
   "scripts": {
     "preinstall": "bun ./scripts/preinstall.ts"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@types/bun": "latest",
-    "typescript": "5.6.3",
+    "degit": "^2.8.4",
     "react": "file:vendor/react",
-    "react-dom": "file:vendor/react-dom"
+    "react-dom": "file:vendor/react-dom",
+    "typescript": "5.6.3"
+  },
+  "resolutions": {
+    "react": "file:vendor/react",
+    "react-dom": "file:vendor/react-dom",
+    "react-server-dom-esm": "file:vendor/react-server-dom-esm"
   }
 }
