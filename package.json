@@ -2,7 +2,7 @@
   "name": "guava",
   "module": "index.ts",
   "type": "module",
-  "workspaces": ["demo-app"],
+  "workspaces": ["demo-app", "fafo"],
   "scripts": {
     "preinstall": "bun ./scripts/preinstall.ts"
   },
